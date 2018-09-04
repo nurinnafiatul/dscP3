@@ -1,0 +1,37 @@
+library("datasets")
+data("pressure")#data(pressure)works.too
+plot(pressure)
+#alternative
+with(pressure,plot(pressure,temperature)
+     win.graph()
+plot(pressure,type="p",main="pressuredata")
+win.graph()
+plot(pressure,type="l",main="pressuredata")       
+win.graph()
+plot(pressure,type="h",main="pressuredata")  
+win.graph()
+plot(pressure,type="b",main="pressuredata") 
+#dot.plot
+data(iris)#loadirisdata
+pch.vec<-c(16,2,3)[iris$Species]
+col.vec<-c(16,2,3)[iris$Species]
+plot(iris$Sepal.Length,iris$Sepal.Width,col=col.vec,pch=pch.vec)
+data(iris)#loadirisdata
+pch.vec<-c(6,12,13)[iris$Species]
+col.vec<-c(1,12,13)[iris$Species]
+plot(iris$Sepal.Length,iris$Sepal.Width,col=col.vec,pch=pch.vec)
+boxplot(InsectSprays$count)
+boxplot(InsectSprays)
+boxplot(count~spray,data=InsectSprays)
+help
+barplot(VADeaths)
+help
+hist(iris$Sepal.Length)
+#nurinchallenges
+hist(iris$Sepal.Length,col="green")
+barplot(VADeaths,col="pink")
+boxplot(count~spray,data=InsectSprays,col="red")
+barplot(VADeaths,col=c("green","purple","blue","red")
+boxplot(iris, col=c("red","blue","green","pink","yellow"))
+summary(iris$Species)   
+        
